@@ -1,7 +1,6 @@
-require "wxjsapi/config/version"
+require "wxjsapi/version"
 
 module Wxjsapi
-  module Config
     class WechatConfig
       attr_accessor :debug, :appId, :appSecret, :timestamp, :nonceStr, :signature, :jsApiList
       def initialize appId, appSecret, jsApiList
@@ -21,7 +20,7 @@ module Wxjsapi
         else
           @jsApiList = "onMenuShareTimeline,onMenuShareAppMessage,onMenuShareQQ,onMenuShareWeibo,startRecord,stopRecord,onVoiceRecordEnd,playVoice,pauseVoice,stopVoice,onVoicePlayEnd,uploadVoice,downloadVoice,chooseImage,previewImage,uploadImage,downloadImage,translateVoice,getNetworkType,openLocation,getLocation,hideOptionMenu,showOptionMenu,hideMenuItems,showMenuItems,hideAllNonBaseMenuItem,showAllNonBaseMenuItem,closeWindow,scanQRCode,chooseWXPay,openProductSpecificView,addCard,chooseCard,openCard"
         end
-        self.debug = 'fales'
+        self.debug = 'false'
       end
 
       def wxJsSDKSign url
@@ -95,5 +94,4 @@ module Wxjsapi
         end
       end
     end
-  end
 end

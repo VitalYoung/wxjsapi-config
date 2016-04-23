@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'wxjsapi/config/version'
+require 'wxjsapi/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "wxjsapi-config"
-  spec.version       = Wxjsapi::Config::VERSION
+  spec.name          = "wxjsapi"
+  spec.version       = Wxjsapi::VERSION
   spec.authors       = ["Nick.zhu"]
   spec.email         = ["nick.zhu@icitymoble.com"]
 
