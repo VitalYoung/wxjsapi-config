@@ -22,7 +22,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+wx_config = Wxjsapi.Config.WechatConfig([appId], [appSecret], [jsapilist]) # jsapilist 需要使用微信jsapi的功能，如 "onMenuShareTimeline,onMenuShareAppMessage"
+wx_config.wxJsSDKSign([url])  # 生成微信jsapi需要的参数。使用微信jsapi页面的url
+wx_config 可以使用的微信jsapi参数有 :appId, :timestamp, :nonceStr, :signature, :jsApiList
+
+```
 
 ## Development
 
